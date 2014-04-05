@@ -1,0 +1,1333 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>IAP-T20-2014</title>
+<link href="include/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="include/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="include/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/all_styles.css">
+<script>
+function AllMatches()
+{	
+var p=$( "#all-matches" ).val();
+alert(p);
+}
+function AllVenues()
+{	
+var p=$( "#all-venues" ).val();
+alert(p);
+}
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+<div id="container-1">
+	<div id="headrer-fst">
+		
+	</div>
+    <div data-role="header"><h1>IPL T20 2014</h1></div>
+	<div data-role="content">	
+		<div id="logo-ipl"><img src="imgs/logo-ipl-150-150.png"/></div>
+         <h2>IPL T20 WORLD CUP<br> 2014</h2>
+      <p align="center">
+     
+        <a href="#page1" data-role="button" data-inline="true" data-theme="b" data-icon="info">View More</a>
+      </p>	
+	</div>
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+<div data-role="page" id="page1">
+	<div id="container-2" class="bg1">
+	    <div data-role="header"><a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a><h1>IPL T20 2014</h1></div>
+	<div data-role="content">	
+	
+<!-- ALL MATCHES -->
+	<select name="all-matches" id="all-matches" data-native-menu="false" data-standalone-popup="true" onChange="AllMatches()">
+        <option value="All Matches">All Matches</option>
+		<option value="Chennai Super Kings">Chennai Super Kings</option>
+		<option value="Delhi Daredevils">Delhi Daredevils</option>
+		<option value="Kings XI Punjab">Kings XI Punjab</option>
+		<option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+        <option value="Mumbai Indians">Mumbai Indians</option>
+		<option value="Rajasthan Royals">Rajasthan Royals</option>
+		<option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+		<option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+	</select>
+    <!-- ALL VENUES-->
+    <select name="all-venues" id="all-venues" data-native-menu="false" data-standalone-popup="true" onChange="AllVenues()">
+    <option value="All Matches">All Venues</option>
+    <option value="Barabati Stadium">Barabati Stadium</option>
+    <option value="Chidambaram">Chidambaram</option>
+    <option value="Chinnaswamy">Chinnaswamy</option>
+    <option value="Dubai International Cricket Stadium">Dubai International Cricket Stadium</option>
+    <option value="Eden Gardens">Eden Gardens</option>
+    <option value="JSCA Stadium">JSCA Stadium</option>
+    <option value="Kotla">Kotla</option>
+    <option value="PCA Stadium">PCA Stadium</option>
+    <option value="RGI Stadium">RGI Stadium</option>
+    <option value="Sardar Patel Stadium">Sardar Patel Stadium</option>
+    <option value="Sharjah Cricket Stadium">Sharjah Cricket Stadium</option>
+    <option value="Sheikh Zayed Stadium">Sheikh Zayed Stadium</option>
+    <option value="Wankhede Stadium">Wankhede Stadium</option>
+	</select>
+
+<table align="center" width="70%">
+<tr>
+<td>
+	<fieldset class="ui-grid-a" >
+	<div class="ui-block-a" align="center">
+        <div id="team-icon">
+        <a href="#team1"><img src="imgs/team-1.png"/></a>
+        </div>
+    </div>
+	<div class="ui-block-b"align="center">
+    	<div id="team-icon">
+        <a href="#team2"><img src="imgs/team-2.png"/></a>
+        </div>   
+     </div>
+    <div class="ui-block-a" align="center">
+    	<div id="team-icon">
+        <a href="#team3"><img src="imgs/team-3.png"/></a>
+        </div>
+    </div>
+	<div class="ui-block-b" align="center">
+    	<div id="team-icon">
+        <a href="#team4"><img src="imgs/team-4.png"/></a>
+        </div>
+    </div>
+    <div class="ui-block-a" align="center">
+    	<div id="team-icon">
+        <a href="#team5"><img src="imgs/team-5.png"/></a>
+        </div>
+    </div>
+	<div class="ui-block-b" align="center">
+    	<div id="team-icon">
+        <a href="#team6"><img src="imgs/team-6.png"/></a>
+        </div>
+    </div>
+    <div class="ui-block-a" align="center">
+        <div id="team-icon">
+        <a href="#team7"><img src="imgs/team-7.png"/></a>
+        </div>
+    </div>
+	<div class="ui-block-b" align="center">
+    <div id="team-icon">
+        <a href="#team8"><img src="imgs/team-8.png"/></a>
+        </div>
+    </div>	   
+</fieldset>
+
+</td>
+</tr>
+</table>
+
+<!-- ALL TEAM BTN -->
+
+<table width="80%" align="center">
+<tr>
+
+<td align="center">
+<a href="#page3" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Live Score</a>
+</td>
+</tr></table>
+	</div>
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+<!-- TEAM 1 -->
+<div data-role="page" id="team1">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Chennai Super Kings</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-1.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Chennai Super Kings</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">The India Cements Limited</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Stephen Fleming</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">MS Dhoni</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top"></td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2010, 2011 Winner</td>
+    </tr>
+    </table>
+    <a href="http://www.chennaisuperkings.com/index/index.aspx" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/csk/ms-dhoni.png"/>
+    <div id="player-name2">MS<br>
+      <strong>Dhoni</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/csk/ravindera-ashwani.png"/>
+    <div id="player-name">Ravichandran<br>
+      <strong>Ashwin</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/csk/dwayne-bravo.png"/>
+    <div id="player-name">Dwayne<br>
+      <strong>Bravo</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/csk/rajendra-jadeja.png"/>
+    <div id="player-name">Ravindra<br>
+      <strong>Jadeja</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/csk/suresh-raina.png"/>
+    <div id="player-name">Suresh<br>
+      <strong>Raina</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/csk/francois-du-plessis.png"/>
+    <div id="player-name">Francois<br>
+      <strong>Du Plessis</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center">
+    <img src="imgs/player-thumb.png"/>
+    <div id="player-name">Dwayne<br>
+      <strong>Smith</strong></div>
+    </td>
+    <td align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Brendon<br>
+      <strong>McCullum</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Ashish<br>
+      <strong>Nehra</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/csk/mohit-sharma.png"/>
+    <div id="player-name">Mohit<br>
+      <strong>Sharma</strong></div>
+    </td>
+    <td align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Ishwar<br>
+      <strong>Panday</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/csk/ben-hilfenhaus.png"/>
+      <div id="player-name">Ben<br>
+      <strong>Hilfenhaus</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center">
+    <img src="imgs/player-thumb.png"/>
+    <div id="player-name">John<br>
+      <strong>Hastings</strong></div>
+    </td>
+    <td align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Samuel<br>
+      <strong>Badree</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Matt<br>
+      <strong>Henry</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center">
+    <img src="imgs/player-thumb.png"/>
+    <div id="player-name">Mithun<br>
+      <strong>Manhas</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/csk/vijay-shankar.png"/>
+      <div id="player-name">Vijay<br>
+      <strong>Shankar</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/csk/rohit-more.png"/>
+      <div id="player-name">Rohit<br>
+      <strong>More</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/csk/baba-aparajith.png"/>
+    <div id="player-name">Baba<br>
+      <strong>Aparajith</strong></div>
+    </td>
+    <td align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Pawan<br>
+      <strong>Negi</strong></div></td>
+    <td width="33%" align="center">&nbsp;</td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+<!-- TEAM 2 -->
+<div data-role="page" id="team2">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Delhi Daredevils</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-2.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Delhi Daredevils</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">GMR Sports Pvt Ltd</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Gary Kirsten</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">Kevin Pietersen</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top"></td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2012 Playoffs, 2008, 2009 Semi-finalist</td>
+    </tr>
+    </table>
+    <a href="http://www.delhidaredevils.com/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/dd/dinesh-kartik.png"/>
+    <div id="player-name2">Dinesh<br>
+      <strong>Kartik</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/kevin-petersen.png"/>
+    <div id="player-name">Kevin<br>
+      <strong>Pietersen</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/murli-vijay.png"/>
+      <div id="player-name">Murli<br>
+      <strong>Vijay</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/Mohammad Shami.png"/>
+      <div id="player-name">Mohammad<br>
+      <strong>Shami</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/Nathan Coulter-Nile.png"/>
+      <div id="player-name">Nathan<br>
+      <strong>coulter-Nile</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/Quinton de Kock.png"/>
+      <div id="player-name">Quinton<br>
+      <strong>De Kock</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/Manoj Tiwary.png"/>
+      <div id="player-name">Manoj<br>
+      <strong>Tiwary</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/Jaydev Unadkat.png"/>
+      <div id="player-name">Jaidev<br>
+      <strong>unadkat</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/JP Duminy.png"/>
+      <div id="player-name">JP<br>
+      <strong>Duminy</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/ross-taylor.png"/>
+      <div id="player-name">Ross<br>
+      <strong>Taylor</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/kadar-jadhav.png"/>
+      <div id="player-name">Kedar<br>
+      <strong>Jadhav</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/rahul-sharma.png"/>
+      <div id="player-name">Rahul<br>
+      <strong>Sharma</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/manyak-aggarwal.png"/>
+      <div id="player-name">Mayank<br>
+      <strong>Aggarwal</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/Laxmi Ratan Shukla.png"/>
+      <div id="player-name">Laxmi<br>
+      <strong>Rattan Shukla</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/james-neesham.png"/>
+      <div id="player-name">Jimmy<br>
+      <strong>Neesham</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/Wayne Parnell.png"/>
+      <div id="player-name">Wayne<br>
+      <strong>pernell</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/shabaz-nadeem.png"/>
+      <div id="player-name">Shahbaz<br>
+      <strong>Nadeem</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/Saurabh Tiwary.png"/>
+      <div id="player-name">Saurabh<br>
+      <strong>Tiwary</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/sidharth-kaul.png"/>
+      <div id="player-name">Siddarth<br>
+      <strong>Kaul</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/rahul-shukhla.png"/>
+      <div id="player-name">Rahul<br>
+      <strong>Shukla</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/dd/jayant-yadav.png"/>
+      <div id="player-name">Jayant<br>
+      <strong>Yadav</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/dd/hs-sarhth.png"/>
+      <div id="player-name">HS<br>
+      <strong>Sharath</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/dd/milind-kumar.png"/>
+      <div id="player-name">Milindn<br>
+      <strong>Kumar</strong></div></td>
+    <td width="33%" align="center">&nbsp;</td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+
+<!-- TEAM 3 -->
+<div data-role="page" id="team3">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Kings XI Punjab</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-3.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Kings XI Punjab</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">KPH Dream Cricket Private Limited</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Sanjay Bangar</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">Devid Miller</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top">Punjab Cricket Association Stadium</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2008 Semi-finalist</td>
+    </tr>
+    </table>
+    <a href="http://kxip.in/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/kings-xi/devid-mi.png"/>
+    <div id="player-name2">Devid<br>
+      <strong>Miller</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/mana-vohra.png"/>
+      <div id="player-name">Manan<br>
+      <strong>Vohra</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/mitchell.png"/>
+      <div id="player-name">Mitchell<br>
+      <strong>Johnson</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/glenn-maxwell'.png"/>
+      <div id="player-name">Glenn<br>
+      <strong>maxwell</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/geaorge-balley.png"/>
+      <div id="player-name">George<br>
+      <strong>Balley</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/varinder-shewag.png"/>
+      <div id="player-name">Varinder<br>
+      <strong>Sehwag</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/rishi.png"/>
+      <div id="player-name">Rishi<br>
+      <strong>Dhawan</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/wridhiman.png"/>
+      <div id="player-name">Wriddhiman<br>
+      <strong>Saha</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/shoun-marsh.png"/>
+      <div id="player-name">Shaun<br>
+      <strong>Marsh</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/chetenshwar-pujara.png"/>
+      <div id="player-name">Cheteshwar<br>
+      <strong>Pujara</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/beuran.png"/>
+      <div id="player-name">Beuran<br>
+      <strong>Hendricks</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Laxmipathy<br>
+      <strong>Bala Ji</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/tishara.png"/>
+      <div id="player-name">Thisara<br>
+      <strong>Perera</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/gurkeerat.png"/>
+      <div id="player-name">Gurkeerat <br>
+      <strong>Mann Singh</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/murli-kartik.png"/>
+      <div id="player-name">Murli<br>
+      <strong>Kartik</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/sandeep-sharma.png"/>
+      <div id="player-name">Sandeep <br>
+      <strong>Sharma</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/mandeep.png"/>
+      <div id="player-name">Manddeep<br>
+      <strong>Singh</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/akshar.png"/>
+      <div id="player-name">Akshar<br>
+      <strong>Patel</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/parvinder-awana.png"/>
+      <div id="player-name">Parvinder<br>
+      <strong>Awana</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/sardul.png"/>
+      <div id="player-name">Sardul<br>
+      <strong>Thakur</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/anureet.png"/>
+      <div id="player-name">Anureet <br>
+      <strong>Singh</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/kings-xi/shivam.png"/>
+      <div id="player-name">Shivam<br>
+      <strong>Sharma</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kings-xi/karan.png"/>
+      <div id="player-name">Karanveer<br>
+      <strong>Singh</strong></div></td>
+    <td width="33%" align="center">&nbsp;</td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+
+<!-- TEAM 4 -->
+<div data-role="page" id="team4">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Kolkata Knight Riders</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-4.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Kolkata Knight Riders</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">Knight Riders Sports Private Ltd</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Trevor Bayliss</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">Gautam Gambhir</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top">Eden Gardens</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2012 Winner</td>
+    </tr>
+    </table>
+    <a href="http://www.kkr.in/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/kk-riders/gautam.png"/>
+    <div id="player-name2">Gautam<br>
+      <strong>Gambhir</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/sunil.png"/>
+      <div id="player-name">Sunil<br>
+      <strong>Narine</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/jaq-kallis.png"/>
+      <div id="player-name">Jacques<br>
+      <strong>kallis</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/robbin.png"/>
+      <div id="player-name">Robin<br>
+      <strong>Uthappa</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/poyush.png"/>
+      <div id="player-name">Piyush<br>
+      <strong>Chawla</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/yusuf.png"/>
+      <div id="player-name">Yusuf<br>
+      <strong>Pathan</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/sakib.png"/>
+      <div id="player-name">Sakib<br>
+      <strong>Al Hasan</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/morne.png"/>
+      <div id="player-name">Morne<br>
+      <strong>morkel</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/vinay.png"/>
+      <div id="player-name">Vinay<br>
+      <strong>kumar</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/umesh.png"/>
+      <div id="player-name">Umesh<br>
+      <strong>Yadav</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/manis.png"/>
+      <div id="player-name">Manish<br>
+      <strong>Panday</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/chris.png"/>
+      <div id="player-name">Chris<br>
+      <strong>Lynn</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/pat.png"/>
+      <div id="player-name">Pat<br>
+      <strong>Cummins</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/reyan.png"/>
+      <div id="player-name">Reyan <br>
+      <strong>Ten Deoschate</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/sureya.png"/>
+      <div id="player-name">Surya Kumar<br>
+      <strong>Yadav</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/andre.png"/>
+      <div id="player-name">Andre<br>
+      <strong>Russell</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/manvinder.png"/>
+      <div id="player-name">Manvinder<br>
+      <strong>Bisla</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/kk-riders/veer.png"/>
+      <div id="player-name">Veer Partap<br>
+      <strong>Singh</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Kuldeep <br>
+      <strong>Yadav</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/kk-riders/debrata.png"/>
+      <div id="player-name">Debabrata<br>
+      <strong>Das</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Sayan <br>
+      <strong>Mondal</strong></div></td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+
+<!-- TEAM 5 -->
+<div data-role="page" id="team5">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Mumbai Indians</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-5.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Mumbai Indians</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">Indiawin Sports Pvt. Ltd</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">John Wright</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">Rohit Sharma</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top">Wankhede Stadium</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2013 Winners</td>
+    </tr>
+    </table>
+    <a href="http://www.mumbaiindians.com/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/mi/lastinh.png"/>
+    <div id="player-name">Lasith<br>
+      <strong>Malinga</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/kieron.png"/>
+      <div id="player-name">Kieron <br>
+      <strong>Pollard</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/mi/ambati.png"/>
+      <div id="player-name">Ambati<br>
+      <strong>Rayudu</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/mi/rohit.png"/>
+      <div id="player-name2">Rohit<br>
+      <strong>Sharma</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/harbhajan.png"/>
+      <div id="player-name">Harbhajan<br>
+      <strong>Singh</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/mi/michel.png"/>
+      <div id="player-name">Michael<br>
+      <strong> Hussey</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/mi/corey.png"/>
+      <div id="player-name">Corey<br>
+      <strong>Anderson</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/pragan.png"/>
+      <div id="player-name">Pragyan <br>
+      <strong>Ojha</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/mi/zaheer.png"/>
+      <div id="player-name">Zaheer<br>
+      <strong>Khan</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/mi/aditya.png"/>
+      <div id="player-name">Aditya<br>
+      <strong>Tare</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/jasprit.png"/>
+      <div id="player-name">Jaspreet<br>
+      <strong>Bumrah</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/mi/jalal.png"/>
+      <div id="player-name">Jalal<br>
+      <strong>Sexena</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/mi/josh.png"/>
+      <div id="player-name">Josh<br>
+      <strong>Hazlewood</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/marchant.png"/>
+      <div id="player-name">Marchant<br>
+      <strong>De Lange</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/mi/krishmar.png"/>
+      <div id="player-name">Krishmar<br>
+      <strong>Santokie</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/mi/ben.png"/>
+      <div id="player-name">Ben<br>
+      <strong>Dunk</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/cm-gautam.png"/>
+      <div id="player-name">CM<br>
+      <strong>Gautam</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/mi/apoorv.png"/>
+      <div id="player-name">Apoorv<br>
+      <strong>Wankhede</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/mi/pawan.png"/>
+      <div id="player-name">Pawan<br>
+      <strong>Suyal</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/mi/sushant.png"/>
+      <div id="player-name">Sushant <br>
+      <strong>Marathe</strong></div></td>
+    <td width="33%" align="center">&nbsp;</td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+<!-- TEAM 6 -->
+<div data-role="page" id="team6">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Rajasthan Royals</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-6.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Rajasthan Royals</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">Jaipur IPL Cricket Private Ltd</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Paddy Upton</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">Shane Watson</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top"></td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2008 Winner</td>
+    </tr>
+    </table>
+    <a href="http://www.rajasthanroyals.com/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/RR/shane.png"/>
+    <div id="player-name2">Shane<br>
+      <strong>Waston</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RR/stuart.png"/>
+      <div id="player-name">Stuart<br>
+      <strong>Binny</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RR/ajinlya.png"/>
+      <div id="player-name">Ajinkya<br>
+      <strong>Rahane</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/RR/sanju.png"/>
+      <div id="player-name">Sanju<br>
+      <strong>Samson</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RR/steve.png"/>
+      <div id="player-name">Steve<br>
+      <strong>Smith</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RR/brad.png"/>
+      <div id="player-name">Brad<br>
+      <strong> Hodge</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/RR/rajat.png"/>
+      <div id="player-name">Rajat<br>
+      <strong>Bhatia</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RR/tim.png"/>
+      <div id="player-name">Tim<br>
+      <strong>Southee</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RR/dhawal.png"/>
+      <div id="player-name">Dhawal<br>
+      <strong>Kulkarni</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/RR/abishek.png" alt=""/>
+      <div id="player-name">Abishek<br>
+      <strong>Nayar</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RR/kane.png"/>
+      <div id="player-name">Kane<br>
+      <strong>Richardson</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RR/ben.png"/>
+      <div id="player-name">Ben<br>
+      <strong>Cutting</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/RR/karun.png"/>
+      <div id="player-name">Karun<br>
+      <strong>Nair</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RR/unmukt.png"/>
+      <div id="player-name">Unmukt<br>
+      <strong>Chand</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RR/iqbal.png"/>
+      <div id="player-name">Iqbal<br>
+      <strong>Abdulla</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Deepak<br>
+      <strong>Hooda</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RR/dishant.png"/>
+      <div id="player-name">Dishant<br>
+      <strong>Yagnik</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RR/kevon.png"/>
+      <div id="player-name">Kevon<br>
+      <strong>Cooper</strong></div></td>
+    </tr>
+        <tr>
+          <td align="center"><img src="imgs/players/RR/vikramjit.png"/>
+            <div id="player-name">Vikramjit <br>
+              <strong>Malik</strong></div></td>
+          <td align="center"><img src="imgs/players/RR/ankit.png"/>
+            <div id="player-name">Ankit <br>
+              <strong>Sharma</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Rahul <br>
+        <strong>Tewaita</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Ankush<br>
+      <strong>Bains</strong></div>
+    </td>
+    <td align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">A<br>
+        <strong>Mishra</strong></div></td>
+    <td align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Pravin<br>
+        <strong>Tambe</strong></div></td>
+      </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+
+
+<!-- TEAM 7 -->
+<div data-role="page" id="team7">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Royal Challengers Bangalore</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-7.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Royal Challengers Bangalore</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">Royal Challengers Sports Private Ltd</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Daniel Vettori</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">Virat Kohli</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top">M. Chinnaswamy Stadium</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2009, 2011 Finalist</td>
+    </tr>
+    </table>
+    <a href="http://www.royalchallengers.com/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/RCB/virat.png"/>
+    <div id="player-name2">Virat<br>
+      <strong>Kohli</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RCB/ab.png"/>
+      <div id="player-name">AB<br>
+      <strong>Villiers</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RCB/chris.png"/>
+      <div id="player-name">Chris<br>
+      <strong>Gayle</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/RCB/yuvraj.png"/>
+      <div id="player-name">Yuvraj<br>
+      <strong>Singh</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RCB/mitchell.png"/>
+      <div id="player-name">Mitchell<br>
+      <strong>Starc</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RCB/albie.png"/>
+      <div id="player-name">Albie<br>
+      <strong> Morkel</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/RCB/varun.png"/>
+      <div id="player-name">Varun<br>
+      <strong>Aaron</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RCB/ashok.png"/>
+      <div id="player-name">Ashok<br>
+      <strong>Dinda</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RCB/parthiv.png"/>
+      <div id="player-name">Parthiv<br>
+      <strong>Patel</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/RCB/muttah.png"/>
+      <div id="player-name">Muttiah<br>
+      <strong>Muralitharan</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RCB/ravi.png"/>
+      <div id="player-name">Ravi<br>
+      <strong>Rampaul</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png" alt=""/>
+      <div id="player-name">Nick<br>
+      <strong>Meddinson</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/RCB/harshal.png"/>
+      <div id="player-name">Harshal<br>
+      <strong>Patel</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RCB/vijay.png"/>
+      <div id="player-name">Vijay<br>
+      <strong>Zol</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RCB/abu.png"/>
+      <div id="player-name">Abu<br>
+      <strong>Nechim</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/RCB/sachin-rana.png"/>
+      <div id="player-name">Sachin<br>
+      <strong>Rana</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/RCB/shadab.png"/>
+      <div id="player-name">Shadab<br>
+      <strong>Jakati</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RCB/sandeep.png"/>
+      <div id="player-name">Sandeep<br>
+      <strong>Warrier</strong></div></td>
+    </tr>
+        <tr>
+          <td align="center"><img src="imgs/players/RCB/tanmay.png"/>
+            <div id="player-name">Tanmay<br>
+              <strong>Mishra</strong></div></td>
+          <td align="center"><img src="imgs/player-thumb.png"/>
+            <div id="player-name">Yogesh <br>
+              <strong>Takawale</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/RCB/yuzvedra.png"/>
+      <div id="player-name">Yuzvendra <br>
+        <strong>Chahal</strong></div></td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+
+
+
+<!-- TEAM 8 -->
+<div data-role="page" id="team8">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	<div data-role="content">
+    <h2>Sunrisers Hyderabad</h2>
+    <div id="team-info"><table width="100%">
+    <tr>
+    <td width="50%"> <img src="imgs/team-info-8.png" width="100%" height="160"></td>
+    <td width="2%"></td>
+    <td valign="top"> 
+    <span class="text1">Sunrisers Hyderabad</span>
+    <table width="100%">
+    <tr>
+    <td width="25%" valign="top"><strong>Owner</strong></td>
+    <td width="75%" valign="top">SUN TV Network</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Coach</strong></td>
+    <td valign="top">Tom Moody</td>
+    </tr>
+     <tr>
+    <td valign="top"><strong>Captain</strong></td>
+    <td valign="top">	 Shikhar Dhawan</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>Venue</strong></td>
+    <td valign="top">Rajiv Gandhi Cricket Stadium</td>
+    </tr>
+    <tr>
+    <td valign="top"><strong>IPL Best</strong></td>
+    <td valign="top">2013 Playoffs</td>
+    </tr>
+    </table>
+    <a href="http://www.royalchallengers.com/" target="_blank" rel="external" data-role="button" data-inline="true" data-theme="b">OFFICIAL SITE</a>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <div id="all-players">
+    <table width="100%">
+    <tr>
+    <td width="33%" align="center">
+    <img src="imgs/players/sun/shikahr.png"/>
+    <div id="player-name2">Shikhar<br>
+      <strong>Dhawan</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/sun/dale.png"/>
+      <div id="player-name">Dale<br>
+      <strong>Steyn</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/devid.png"/>
+      <div id="player-name">Devid<br>
+      <strong>Warner</strong></div></td>
+    </tr>
+      <tr>
+    <td width="33%" align="center"><img src="imgs/players/sun/amit.png"/>
+      <div id="player-name">Amit<br>
+      <strong>Mishra</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/sun/bhuvneshwaren.png"/>
+      <div id="player-name">Bhuvneshwar<br>
+      <strong>Kumar</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/aaron.png"/>
+      <div id="player-name">Aaron<br>
+      <strong> Finch</strong></div></td>
+    </tr>
+        <tr>
+    <td width="33%" align="center"><img src="imgs/players/sun/karan.png"/>
+      <div id="player-name">Karan<br>
+      <strong>Sharma</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/sun/daren.png"/>
+      <div id="player-name">Darren<br>
+      <strong>Sammy</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/ishant.png"/>
+      <div id="player-name">Ishant<br>
+      <strong>Sharma</strong></div></td>
+    </tr>
+         <tr>
+    <td width="33%" align="center"><img src="imgs/players/sun/irfan.png"/>
+      <div id="player-name">Irfan<br>
+      <strong>Pathan</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/sun/moises.png"/>
+      <div id="player-name">Moises<br>
+      <strong>Henriques</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/lokesh.png"/>
+      <div id="player-name">Lokesh<br>
+      <strong>Rahul</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/sun/praveez.png"/>
+      <div id="player-name">Parveez<br>
+      <strong>Rasool</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/sun/jason.png"/>
+      <div id="player-name">Jason<br>
+      <strong>Holder</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/venu.png"/>
+      <div id="player-name">Venu Gopal<br>
+      <strong>Rao</strong></div></td>
+    </tr>
+     <tr>
+    <td width="33%" align="center"><img src="imgs/players/sun/naman.png"/>
+      <div id="player-name">Naman<br>
+      <strong>Ojha</strong></div>
+    </td>
+    <td align="center"><img src="imgs/players/sun/brendon.png"/>
+      <div id="player-name">Brendan<br>
+      <strong>taylor</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/player-thumb.png"/>
+      <div id="player-name">Prasath<br>
+      <strong>Parmeshwaren</strong></div></td>
+    </tr>
+        <tr>
+          <td align="center"><img src="imgs/player-thumb.png"/>
+            <div id="player-name">Amit<br>
+              <strong>Paulkar</strong></div></td>
+          <td align="center"><img src="imgs/players/sun/ashish.png"/>
+            <div id="player-name">Ashish<br>
+              <strong>Reddy</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/srikant.png"/>
+      <div id="player-name">Srikkant<br>
+        <strong>Anurudha</strong></div></td>
+    </tr>
+      <tr>
+          <td align="center"><img src="imgs/player-thumb.png"/>
+            <div id="player-name">Ricky<br>
+            <strong>Bhul</strong></div></td>
+          <td align="center"><img src="imgs/player-thumb.png"/>
+            <div id="player-name">Chama<br>
+              <strong>Millind</strong></div></td>
+    <td width="33%" align="center"><img src="imgs/players/sun/manpreet.png"/>
+      <div id="player-name">Manpreet <br>
+        <strong>Juneja</strong></div></td>
+    </tr>
+    </table>
+    </div>
+  	
+      </div>
+   
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+</body>
+</html>

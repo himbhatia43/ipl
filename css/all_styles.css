@@ -1,0 +1,174 @@
+@charset "utf-8";
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;	
+}
+#container-1{
+		width:100%;
+		min-height:100%;
+		height:auto;
+		background-color:#053160;
+		padding:0px;
+		margin:0px;	
+}
+
+#headrer-fst{
+			width:100%;
+			height:50px;
+			margin:auto;
+			background-image:url(../imgs/header-fst.png);
+			background-position:center;
+						
+			}
+#logo-ipl{
+		width:140px;
+		height:160px;
+		margin:auto;
+}
+#headrer-fst h1{
+	color:#FFF;
+	font-size:32px;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	top:10px;
+	text-shadow: 2px 2px #006;
+	
+}
+#container-2{
+		width:100%;		
+		height:auto;		
+		padding:0px;
+		margin:0px;
+		background-color:#053160;
+	
+}
+h2{
+	color:#fff;
+	font-size:1.5em;
+	text-align:center;
+	padding:0 0 10px 0;
+	margin:0px;
+	text-shadow: 1px 1px #333399;
+	
+	
+}
+h3{
+	color:#039;
+	font-size:1.5em;
+	text-align:center;
+	padding:0 0 10px 0;
+	margin:0px;
+	text-shadow: 2px 2px #3346F7;
+}
+#dvider-1{
+			width:100%;
+			height:10px;
+			background-image:url(../imgs/divider-1.png);
+}
+
+#footer1{
+			width:100%;
+			height:40px;
+			margin:auto;
+			background-image:url(../imgs/divider-1.png);
+			background-position:center;	
+			text-align:center;
+			line-height:40px;					
+			}		
+#footer1 a{
+		color:#bce2fe;
+		font-family:Verdana, Geneva, Tahoma, Geneva, sans-serif;
+		font-size:12px;
+		font-weight:normal;
+		text-shadow:none;
+		text-align:center;
+		text-decoration:none;	
+}
+#footer1 a:hover{
+		color:#FFF;
+}
+#team-icon img{
+		width:70px;
+		height:70px;
+		margin:auto;
+}
+#team-icon img:hover{
+		text-shadow: 2px 2px #3346F7;
+}
+select{
+		padding:0;
+		border:none;
+}
+
+.bg1{
+      background-image:url(../imgs/bg1.png);
+	  background-position:center center;
+	  background-repeat:no-repeat;	  
+	  background-size: cover;
+	  background-size: 100% 100%;
+}
+.bg2{
+      background-image:url(../imgs/bg2.png);
+	  background-color:#fff;
+	  background-position:center center;
+	  background-repeat:no-repeat;	
+	  background-size: cover;
+	  background-size: 100% 100%;
+}
+#team-info{
+		width:100%;
+		height:auto;
+		min-height:30%;
+		border:1px solid #EEE;
+		font-size:12px;
+		letter-spacing:1;
+		background-color:#FFF;		
+}
+#all-players{
+		width:100%;
+		height:auto;
+		border:1px solid #EEE;
+		background-color:#FFF;
+		
+}
+	
+.text1{
+		color:#333;
+		font-size:16px;
+		font-weight:bold;
+}
+#player-name{
+		width:90%;
+		height:40px;
+		background-color:#333;
+		text-align:left;
+		color:#FFF;
+		margin:auto;
+		padding-left:5px;
+		font-size:12px;
+
+}
+#player-name:hover{
+		width:90%;
+		height:40px;
+		background-color:#FACC41;
+		text-align:left;
+		color:#333;
+		margin:auto;
+		padding-left:5px;
+		font-size:12px;
+
+}
+#player-name2{
+		width:90%;
+		height:40px;
+		background-color:#FACC41;
+		text-align:left;
+		color:#333;
+		margin:auto;
+		padding-left:5px;
+		font-size:12px;
+
+}
