@@ -8,7 +8,7 @@
 <script src="include/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="css/all_styles.css">
 <script>
-function AllMatches()
+function AllTeams()
 {	
 var p=$( "#all-matches" ).val();
 alert(p);
@@ -47,9 +47,10 @@ alert(p);
 	    <div data-role="header"><a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a><h1>IPL T20 2014</h1></div>
 	<div data-role="content">	
 	
+    <a href="all-matches.html" data-role="button"  data-theme="b" >All Matches</a>
 <!-- ALL MATCHES -->
-	<select name="all-matches" id="all-matches" data-native-menu="false" data-standalone-popup="true" onChange="AllMatches()">
-        <option value="All Matches">All Matches</option>
+	<select name="all-matches" id="all-matches" data-native-menu="false" data-standalone-popup="true" onChange="AllTeams()">
+        <option value="All Teams">All Teams</option>
 		<option value="Chennai Super Kings">Chennai Super Kings</option>
 		<option value="Delhi Daredevils">Delhi Daredevils</option>
 		<option value="Kings XI Punjab">Kings XI Punjab</option>
