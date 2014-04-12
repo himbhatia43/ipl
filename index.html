@@ -1,28 +1,39 @@
 <!DOCTYPE html> 
-<html>
-<head>
+<html><head>
 <meta charset="utf-8">
 <title>IAP-T20-2014</title>
 <link href="include/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="include/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="include/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/match-summary.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="css/all_styles.css">
-<script>
-function AllTeams()
-{	
-var p=$( "#all-matches" ).val();
-alert(p);
+<style>
+
+       #dvLoading
+{
+   background:#000 url(imgs/ball.gif) no-repeat center center;
+   height: 70px;
+   width: 70px;
+   position: fixed;
+   z-index: 1000;
+   left: 50%;
+   top: 50%;
+   margin: -25px 0 0 -25px;
 }
-function AllVenues()
-{	
-var p=$( "#all-venues" ).val();
-alert(p);
-}
-</script>
+        </style>
+        <script>
+		  $(window).load(function(){
+		  $('#dvLoading').fadeOut(3000);
+		   $('#page').show();
+		  });
+        </script>
+     
+      
 </head> 
 <body> 
+<div id="dvLoading"></div>
 
-<div data-role="page" id="page">
+<div data-role="page" id="page" >
 <div id="container-1">
 	<div id="headrer-fst">
 		
@@ -47,36 +58,51 @@ alert(p);
 	    <div data-role="header"><a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a><h1>IPL T20 2014</h1></div>
 	<div data-role="content">	
 	
-    <a href="all-matches.html" data-role="button"  data-theme="b" >All Matches</a>
-<!-- ALL MATCHES -->
-	<select name="all-matches" id="all-matches" data-native-menu="false" data-standalone-popup="true" onChange="AllTeams()">
-        <option value="All Teams">All Teams</option>
-		<option value="Chennai Super Kings">Chennai Super Kings</option>
-		<option value="Delhi Daredevils">Delhi Daredevils</option>
-		<option value="Kings XI Punjab">Kings XI Punjab</option>
-		<option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
-        <option value="Mumbai Indians">Mumbai Indians</option>
-		<option value="Rajasthan Royals">Rajasthan Royals</option>
-		<option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
-		<option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
-	</select>
+    <a href="#ParticularTeam" onClick="AllTeams(3,'All')" data-role="button"  data-theme="b" >All Matches</a>
+     <!-- ALL MATCHES -->
+
+    <div id="first-page-menu" data-role="collapsible-set" data-theme="b" data-content-theme="c" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:auto; width:98%;">
+        <div data-role="collapsible" data-inset="false">
+            <h2>All Teams</h2>
+<ul data-role="listview">
+<li onClick="AllTeams(1,'Chennai Super Kings')"><a href="#ParticularTeam">Chennai Super Kings</a></li>
+<li onClick="AllTeams(1,'Delhi Daredevils')"><a href="#ParticularTeam">Delhi Daredevils</a></li>
+<li onClick="AllTeams(1,'Kings XI Punjab')"><a href="#ParticularTeam">Kings XI Punjab</a></li>
+<li onClick="AllTeams(1,'Kolkata Knight Riders')"><a href="#ParticularTeam">Kolkata Knight Riders</a></li>
+<li onClick="AllTeams(1,'Mumbai Indians')"><a href="#ParticularTeam">Mumbai Indians</a></li>
+<li onClick="AllTeams(1,'Rajasthan Royals')"><a href="#ParticularTeam">Rajasthan Royals</a></li>
+<li onClick="AllTeams(1,'Royal Challengers Bangalore')"><a href="#ParticularTeam">Royal Challengers Bangalore</a></li>
+<li onClick="AllTeams(1,'Sunrisers Hyderabad')"><a href="#ParticularTeam">Sunrisers Hyderabad</a></li>
+   
+</ul>
+</div>
+</div>
+<br/>
     <!-- ALL VENUES-->
-    <select name="all-venues" id="all-venues" data-native-menu="false" data-standalone-popup="true" onChange="AllVenues()">
-    <option value="All Matches">All Venues</option>
-    <option value="Barabati Stadium">Barabati Stadium</option>
-    <option value="Chidambaram">Chidambaram</option>
-    <option value="Chinnaswamy">Chinnaswamy</option>
-    <option value="Dubai International Cricket Stadium">Dubai International Cricket Stadium</option>
-    <option value="Eden Gardens">Eden Gardens</option>
-    <option value="JSCA Stadium">JSCA Stadium</option>
-    <option value="Kotla">Kotla</option>
-    <option value="PCA Stadium">PCA Stadium</option>
-    <option value="RGI Stadium">RGI Stadium</option>
-    <option value="Sardar Patel Stadium">Sardar Patel Stadium</option>
-    <option value="Sharjah Cricket Stadium">Sharjah Cricket Stadium</option>
-    <option value="Sheikh Zayed Stadium">Sheikh Zayed Stadium</option>
-    <option value="Wankhede Stadium">Wankhede Stadium</option>
-	</select>
+    
+    <div id="first-page-menu" data-role="collapsible-set" data-theme="b" data-content-theme="c" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:auto; width:98%;">
+        <div data-role="collapsible" data-inset="false">
+            <h2>All Venues</h2>
+<ul data-role="listview">
+<li onClick="AllTeams(2,'Barabati Stadium')"><a href="#ParticularTeam">Barabati Stadium</a></li>
+<li onClick="AllTeams(2,'Chidambaram')"><a href="#ParticularTeam">Chidambaram</a></li>
+<li onClick="AllTeams(2,'Chinnaswamy')"><a href="#ParticularTeam">Chinnaswamy</a></li>
+<li onClick="AllTeams(2,'Dubai International Cricket Stadium')"><a href="#ParticularTeam">Dubai International Cricket Stadium</a></li>    
+<li onClick="AllTeams(2,'Eden Gardens')"><a href="#ParticularTeam">Eden Gardens</a></li>
+<li onClick="AllTeams(2,'JSCA Stadium')"><a href="#ParticularTeam">JSCA Stadium</a></li>
+<li onClick="AllTeams(2,'Kotla')"><a href="#ParticularTeam">Kotla</a></li>
+<li onClick="AllTeams(2,'PCA Stadium')"><a href="#ParticularTeam">PCA Stadium</a></li>
+<li onClick="AllTeams(2,'RGI Stadium')"><a href="#ParticularTeam">RGI Stadium</a></li>
+<li onClick="AllTeams(2,'Sardar Patel Stadium')"><a href="#ParticularTeam">Sardar Patel Stadium</a></li>
+<li onClick="AllTeams(2,'Sharjah Cricket Stadium')"><a href="#ParticularTeam">Sharjah Cricket Stadium</a></li>
+<li onClick="AllTeams(2,'Sheikh Zayed Stadium')"><a href="#ParticularTeam">Sheikh Zayed Stadium</a></li>
+<li onClick="AllTeams(2,'Wankhede Stadium')"><a href="#ParticularTeam">Wankhede Stadium</a></li>
+   
+</ul>
+</div>
+</div>
+
+   
 
 <table align="center" width="70%">
 <tr>
@@ -1323,7 +1349,28 @@ alert(p);
     </div>
   	
       </div>
-   
+ 
+	<div id="footer1">
+		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
+	</div>
+    </div><!-- CONTAINER1 DIV END HERE-->
+</div>
+
+
+
+<!-- TEAM 8 -->
+<div data-role="page" id="ParticularTeam">
+	<div id="container-2">
+	    <div data-role="header">
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l" data-theme="b" data-iconpos="notext" class="backBtn" href="#page1">Back</a><h1>IPL T20 2014</h1>
+          <a id="backButton" data-role="button" data-direction="reverse" data-rel="back" data-icon="home" data-theme="b" data-iconpos="notext" class="backBtn" href="#page">Back</a>
+      </div>
+	 <div data-role="content">
+      <div id="matter-in">
+
+       </div>  
+      </div>
+ 
 	<div id="footer1">
 		<h6><a href="http://www.ipsolutionz.com" rel="external" target="_blank" >Powered By Infotech Professional Solutionz Pvt. Ltd</a></h6>
 	</div>
